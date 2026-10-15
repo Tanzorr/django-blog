@@ -1,0 +1,31 @@
+# Environment — never commit real credentials
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Django
+/staticfiles/
+/media/
+db.sqlite3
+
+# Tooling
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE / OS
+/.idea
+/.vscode
+.DS_Store
+Thumbs.db
+
+# Claude Code — project settings and the .ai layer ARE committed on purpose.
+# Only personal overrides stay local.
+.claude/settings.local.json

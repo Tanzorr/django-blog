@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "defaultMode": "default",
+
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+
+      "Bash(rg:*)",
+      "Bash(find:*)",
+      "Bash(jq:*)",
+      "Bash(ls:*)",
+      "Bash(tree:*)",
+      "Bash(wc:*)",
+      "Bash(file:*)",
+      "Bash(stat:*)",
+      "Bash(du:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git show:*)",
+      "Bash(git branch:*)",
+      "Bash(git blame:*)",
+      "Bash(git grep:*)",
+      "Bash(git ls-files:*)",
+
+      "Bash(docker compose ps:*)",
+      "Bash(docker compose logs:*)",
+      "Bash(docker compose config:*)",
+      "Bash(docker compose exec web pytest:*)",
+      "Bash(docker compose exec web ruff:*)",
+      "Bash(docker compose exec web python manage.py check:*)",
+      "Bash(docker compose exec web python manage.py showmigrations:*)",
+      "Bash(docker compose exec web python manage.py makemigrations --check:*)",
+      "Bash(docker compose exec web python manage.py sqlmigrate:*)",
+      "Bash(docker compose exec web python manage.py show_urls:*)",
+      "Bash(docker compose exec web pip list:*)",
+      "Bash(docker compose exec web pip show:*)"
+    ],
+
+    "ask": [
+      "Bash(docker compose exec web pip install:*)",
+      "Bash(docker compose exec web pip uninstall:*)",
+      "Bash(docker compose exec web python manage.py migrate:*)",
+      "Bash(docker compose exec web python manage.py makemigrations:*)",
+      "Bash(docker compose exec web python manage.py startapp:*)",
+      "Bash(docker compose exec web python manage.py createsuperuser:*)",
+      "Bash(docker compose exec web python manage.py shell:*)",
+      "Bash(docker compose exec db psql:*)",
+
+      "Bash(docker compose up:*)",
+      "Bash(docker compose down:*)",
+      "Bash(docker compose build:*)",
+      "Bash(docker compose restart:*)",
+      "Bash(docker volume:*)",
+
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git reset:*)",
+      "Bash(git checkout:*)",
+      "Bash(git rebase:*)",
+      "Bash(git stash:*)",
+
+      "Edit(./requirements.txt)",
+      "Edit(./docker-compose.yml)",
+      "Edit(./docker/**)",
+      "Edit(./.env.example)"
+    ],
+
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.local)",
+      "Read(./.env.*.local)",
+      "Read(./.env.production)",
+      "Read(./**/*.key)",
+      "Read(./**/*.pem)",
+      "Read(./**/id_rsa*)",
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)",
+
+      "Edit(./.env)",
+      "Edit(./.venv/**)",
+
+      "Bash(cat .env)",
+      "Bash(cat ./.env)",
+      "Bash(rm -rf:*)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(docker compose down -v:*)",
+      "Bash(docker compose exec web python manage.py flush:*)",
+      "Bash(docker compose exec web python manage.py reset_db:*)",
+      "Bash(chmod 777:*)"
+    ]
+  }
+}
