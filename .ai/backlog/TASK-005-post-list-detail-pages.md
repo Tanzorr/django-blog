@@ -2,7 +2,7 @@
 
 | Field | Value |
 | :--- | :--- |
-| **Status** | `planned` |
+| **Status** | `in-progress` |
 | **Priority** | P1 (main feature) |
 | **Value driver** | `V-5` from [`../business/VALUE.md`](../business/VALUE.md) |
 | **Needs first** | `TASK-004` |

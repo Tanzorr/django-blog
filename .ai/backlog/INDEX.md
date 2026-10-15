@@ -10,7 +10,7 @@ New tickets use [`TEMPLATE.md`](TEMPLATE.md).
 | ID | Title | Status | Priority | Goal | Needs first |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | [TASK-003](TASK-003-admin-login-seed.md) | Create a dev admin user with one command | `planned` | P2 | V-1 | TASK-001 |
-| [TASK-005](TASK-005-post-list-detail-pages.md) | Show published Posts on a list page and a detail page | `planned` | P1 | V-5 | TASK-004 |
+| [TASK-005](TASK-005-post-list-detail-pages.md) | Show published Posts on a list page and a detail page | `in-progress` | P1 | V-5 | TASK-004 |
 | [TASK-006](TASK-006-comments.md) | Let Readers comment on a Post | `planned` | P1 | V-5 | TASK-005 |
 | [TASK-007](TASK-007-tags.md) | Add Tags and a page for each Tag | `planned` | P1 | V-5 | TASK-005 |
 

@@ -2,6 +2,11 @@ from django.conf import settings
 from django.db import models
 
 
+class PostQuerySet(models.QuerySet):
+    def published(self):
+        return self.filter(status=Post.Status.PUBLISHED).order_by("-published_at")
+
+
 class Post(models.Model):
     class Status(models.TextChoices):
         DRAFT = "draft", "Draft"
@@ -16,6 +21,7 @@ class Post(models.Model):
     status = models.CharField(max_length=10, choices=Status, default=Status.DRAFT)
     published_at = models.DateTimeField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    objects = PostQuerySet.as_manager()
 
     class Meta:
         constraints = [
