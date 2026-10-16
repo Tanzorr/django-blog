@@ -4,11 +4,6 @@ from django.db import IntegrityError
 from blog.models import Post
 
 
-@pytest.fixture
-def author(django_user_model):
-    return django_user_model.objects.create_user(username="author", password="pass")
-
-
 def test_str_is_title():
     post = Post(title="Hello")
     assert str(post) == "Hello"
