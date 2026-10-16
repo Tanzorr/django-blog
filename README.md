@@ -1,4 +1,4 @@
-# Django Learning Project
+# django-blog
 
 A first Django project. The goal is to learn Django and Python in the same way
 real projects are built: PostgreSQL, migrations, tests, Docker, and settings
@@ -50,5 +50,3 @@ All details about the tools and versions: [`.ai/context/stack.md`](.ai/context/s
 
 Work is planned as tickets in [`.ai/backlog/`](.ai/backlog/INDEX.md). The next
 ticket is **TASK-005 — show published Posts on a list page and a detail page.**
-# pyton-blog
-# pyton-blog
